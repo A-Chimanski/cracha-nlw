@@ -1,0 +1,98 @@
+<!--
+  HTML
+
+  HyperText
+  é um texto com links 
+
+  Markup - marcação
+  Tags
+
+  Language
+  regras de uma linguagem
+
+camelCase 
+PascalCase
+snake_case
+  
+        
+        javascript 
+não precisa usar getElementById quando se esta trocando o valor do id com text.content se for um ID, basta usar o id mais .textContent
+ex:
+function changesocialMediaLinks ( ) {
+  document.getElementById ('userName').textContent = 'olivia'
+}
+pode ser:
+function changesocialMediaLinks ( ) {
+  userName.textContent = 'olivia'
+}
+
+        For ( ) é uma estrutura de repetição que vai executar até ser encerrada
+dentro do for deve haver o controlador, a condição de encerrar e contagem.
+ex: 
+for (let i = 0, i<= 10, i++)
+ou
+for (let li of socialLinks.children)
+-->
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Anderson Chimanski - DoWhile 2021</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="avatar">
+          <span>
+            <img src="images/build.svg" alt="Selo" />
+          </span>
+          <img src="images/profile.jpg" alt="Foto" />
+        </div>
+        <h1 id="userName">Anderson Chimanski</h1>
+        <a id="userLink" href="https://github.com/A-Chimanski" target="_blank">
+          <img src="images/github 2.svg" alt="github" /><span id="userLogin">
+            a.chimanski</span
+          ></a
+        >
+        <p id="userBio">
+          An instructor focused on helping pople start programming for web
+        </p>
+        <ul id="socialLinks">
+          <li class="youtube">
+            <a
+              href="https://youtube.com/channel/UCGQWJ0qz3fkdBJ20PVU-sxA"
+              target="_blank"
+            >
+              <img src="images/youtube.svg" alt="icone youtube" />
+            </a>
+          </li>
+          <li class="facebook">
+            <a href="https://facebook.com/ander.chimanski" target="_blank">
+              <img src="images/Facebook.svg" alt="icone facebook" />
+            </a>
+          </li>
+          <li class="instagram">
+            <a href="https://instagram.com/anderschimanski" target="_blank">
+              <img src="images/instagram.svg" alt="icone instagram" />
+            </a>
+          </li>
+          <li class="twitter">
+            <a href="https://twitter.com/chimanskiander" target="_blank">
+              <img src="images/Twitter.svg" alt="icone twitter" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
